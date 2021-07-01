@@ -34,7 +34,7 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzcJBb0d--XK5tModbjj90CWaJ-B0PQqW3Aea4OQHhvNONqBMsfWPloGWrAfTLfODX46g/exec'
     const form = document.forms['submit-to-google-sheet']
     async function getIp(){
-      const response = await fetch('http://api.ipify.org/?format=json');
+      const response = await fetch('https://api.ipify.org/?format=json');
       const data = await response.json();
       return data;
     };
